@@ -1,0 +1,78 @@
+# Public repository allowlist. Everything else stays local.
+/*
+!/.gitignore
+!/README.md
+!/notes/
+!/knowledge_base/
+!/skill_tree/
+!/books/
+!/docs/
+!/tools/
+
+# Author's theory notes and small experiments.
+/notes/**
+!/notes/**/
+!/notes/**/*.md
+!/notes/**/*.py
+!/notes/**/*.m
+!/notes/**/*.png
+/notes/**/AGENTS.md
+/notes/**/CLAUDE.md
+/notes/**/.claude/
+/notes/**/references/
+/notes/**/resources/
+/notes/**/_tmp_txt/
+# Historical translations and project inventories remain local until reviewed.
+/notes/drone/EGO-Planner_中文翻译.md
+/notes/drone/论文导读.md
+/notes/drone/资料清点.md
+
+# Reading drafts: no career records, private cloud links, manifests or state.
+/knowledge_base/*
+!/knowledge_base/README.md
+!/knowledge_base/0[3-9]_*.md
+!/knowledge_base/10_*.md
+
+/skill_tree/*
+!/skill_tree/*.html
+!/skill_tree/*.js
+!/skill_tree/*.md
+!/skill_tree/*.png
+
+# Books and other third-party originals are not redistributed.
+/books/*
+!/books/README.md
+
+/docs/*
+!/docs/学习与文档流程.md
+!/docs/Git存档说明.md
+!/docs/公开目录.md
+
+/tools/*
+!/tools/check_workspace.py
+!/tools/tests/
+/tools/tests/*
+!/tools/tests/test_workspace_paths.py
+
+# Defensive exclusions, including nested files.
+**/__pycache__/
+*.py[cod]
+*.pdf
+*.mp4
+*.mat
+*.slx
+*.zip
+*.tar
+*.gz
+.env
+.env.*
+*.pem
+*.key
+**/*-binding.json
+**/*-state.json
+**/*-review.json
+**/_readback/
+
+# Source documents by another author; personal derivations stay public.
+/notes/kinematics/Robot_Arm_FK.md
+/notes/kinematics/Robot_Arm_IK.md
